@@ -20,3 +20,30 @@
         color: black;
     }
 }
+
+.positionBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnFaq{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    text-decoration: none;
+    background-color: orange;
+    box-shadow: 0 0 10px 0 black;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+    border: 2px solid black;
+
+    &:hover {
+        background-color: rgb(218, 121, 30);
+    }
+}

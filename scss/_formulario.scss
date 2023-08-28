@@ -1,31 +1,101 @@
 /* FORM */
-#textomain {
-  padding-top: 10px;
-  background-color: #666666;
-  color: white;
-  border-radius: 25px;
-  margin-bottom: 30px;
+
+.contenidoCuestionario {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+
+  .contactoCuerpo {
+    border: 2px solid black;
+    box-shadow: 0 0 20px 0 black;
+  }
+  
+  .contactoCuerpo > * {
+    padding: 1rem;
+  }
+
+  .contactoForm {
+    background-color: #666666;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  .contactoForm form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contactoForm form .bloque {
+    grid-column: 1/3;
+  }
+
+  .contactoForm form p {
+    margin: 0;
+    padding: 1em;
+  }
+
+  .contactoForm button,
+  .contactoForm input,
+  .contactoForm textarea {
+    width: 100%;
+    padding: 0.7em;
+    border: none;
+    background: none;
+    outline: none;
+    color: whitesmoke;
+    border-bottom: 1px solid orange;
+  }
+
+  .contactoForm button {
+    background-color: orange;
+    color: whitesmoke;
+    box-shadow: 0 0 10px 0 black;
+    text-shadow: 2px 2px 4px black;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1em;
+
+    &:hover {
+      background-color: rgb(218, 121, 30);
+      border-bottom: 1px solid rgb(218, 121, 30);
+      transition: background-color 1s ease-out;
+    }
+  }
+
+  .contactoRedes {
+    background-color: black;
+    color: white;
+  }
+
+  .contactoRedes ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contactoRedes ul li {
+    padding: .5em;
+  }
 }
 
-#textomain2 {
-  padding-top: 10px;
-  background-color: #666666;
-  color: white;
-  border-radius: 25px;
-  margin-bottom: 30px;
-}
-
-#alinear {
-  align-items: center;
+.contactoRedes h4,
+.contactoRedes ul,
+.contactoRedes p {
   text-align: center;
+  margin: 0 0 1rem 0;
 }
 
-.formularioTitulo {
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 4px black;
-}
+@media (min-width: 768px) {
+  .contactoCuerpo {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
 
-.caja {
-  width: 65%;
+  .contactoRedes h4,
+  .contactoRedes ul,
+  .contactoRedes p {
+    padding: 1em;
+    text-align: left;
+  }
 }
